@@ -1,0 +1,14 @@
+greeting:
+  message: "hello"
+quarkus:
+  hibernate-orm:
+    database:
+      generation: "drop-and-create"
+    log:
+      sql: true
+      jdbc-warnings: true
+  datasource:
+    ##    development environment
+    db-kind: h2
+    jdbc:
+      url: jdbc:h2:mem:default
